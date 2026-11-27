@@ -1,0 +1,123 @@
+[2026-11-27 11:39:01] INFO [finrex.create_app:38] ==================================================
+[2026-11-27 11:39:01] INFO [finrex.create_app:39] FinRex Backend 启动中...
+[2026-11-27 11:39:01] INFO [finrex.create_app:40] ==================================================
+[2026-11-27 11:39:02] INFO [finrex.create_app:50] 已注册模拟进程清理函数
+[2026-11-27 11:39:02] INFO [finrex.create_app:83] 已注册画像图谱 API: /api/persona/*
+[2026-11-27 11:39:02] INFO [finrex.create_app:93] Registered reaction analysis API: /api/reaction/*
+[2026-11-27 11:39:02] INFO [finrex.create_app:103] 已注册资产配置 API: /api/report/<id>/asset-allocation, /api/asset-allocation/*
+[2026-11-27 11:39:02] INFO [finrex.create_app:113] 已注册 Weekly Validation Lab API: /api/validation/*
+[2026-11-27 11:39:02] INFO [finrex.create_app:123] 已注册 BTC Market Data API: /api/market/*
+[2026-11-27 11:39:02] INFO [finrex.create_app:133] 已注册 Quant Hybrid Alpha API: /api/quant/*
+[2026-11-27 11:39:02] INFO [finrex.create_app:143] 已注册 Multi-asset Paper Trading API: /api/paper-trading/*
+[2026-11-27 11:39:02] INFO [finrex.create_app:153] 已注册 FMP News API: /api/fmp/news/*
+[2026-11-27 11:39:02] INFO [finrex.create_app:163] 已注册 YFinance News API: /api/yfinance/*
+[2026-11-27 11:39:02] INFO [finrex.create_app:171] 已注册 Reddit News API: /api/reddit/*
+[2026-11-27 11:39:02] INFO [finrex.create_app:179] 已注册 StockTwits API: /api/stocktwits/*
+[2026-11-27 11:39:19] INFO [finrex.create_app:197] Foundation models ready (kronos+chronos): kronos=True chronos=True
+[2026-11-27 11:39:19] INFO [finrex.create_app:214] FinRex Backend 启动完成
+[2026-11-27 11:39:31] DEBUG [finrex.request.log_request:59] 请求: GET /api/simulation/history
+[2026-11-27 11:39:31] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:39:41] DEBUG [finrex.request.log_request:59] 请求: GET /api/simulation/history
+[2026-11-27 11:39:43] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_request:59] 请求: GET /api/report/report_76b7a9660a32
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_request:59] 请求: GET /api/public-opinion/report_76b7a9660a32
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_request:59] 请求: GET /api/report/report_76b7a9660a32/v2
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_request:59] 请求: GET /api/report/report_76b7a9660a32/asset-allocation
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_request:59] 请求: GET /api/content-studio/report_76b7a9660a32
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_request:59] 请求: GET /api/report/report_76b7a9660a32
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_request:59] 请求: GET /api/simulation/sim_b873ecefd16b/reports
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_request:59] 请求: GET /api/simulation/sim_b873ecefd16b
+[2026-11-27 11:40:04] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:05] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:05] DEBUG [finrex.request.log_request:59] 请求: GET /api/report/report_76b7a9660a32
+[2026-11-27 11:40:05] DEBUG [finrex.request.log_request:59] 请求: GET /api/report/by-simulation/sim_b873ecefd16b
+[2026-11-27 11:40:05] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:05] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:05] DEBUG [finrex.request.log_request:59] 请求: GET /api/report/report_76b7a9660a32
+[2026-11-27 11:40:05] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:06] WARNING [finrex.api.report._attach_stock_precise_forecast_if_missing:158] Failed to attach stock precise forecast for freport_f77523bc1c80: build_precise_forecast_from_ohlcv() got an unexpected keyword argument 'symbol'
+[2026-11-27 11:40:06] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:06] DEBUG [finrex.request.log_request:59] 请求: GET /api/report/by-simulation/sim_b873ecefd16b
+[2026-11-27 11:40:06] WARNING [finrex.api.report._attach_stock_precise_forecast_if_missing:158] Failed to attach stock precise forecast for freport_f77523bc1c80: build_precise_forecast_from_ohlcv() got an unexpected keyword argument 'symbol'
+[2026-11-27 11:40:06] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:10] DEBUG [finrex.request.log_request:59] 请求: GET /api/simulation/history
+[2026-11-27 11:40:12] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:13] DEBUG [finrex.request.log_request:59] 请求: GET /api/paper-trading/symbols
+[2026-11-27 11:40:13] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:13] DEBUG [finrex.request.log_request:59] 请求: GET /api/paper-trading/accounts
+[2026-11-27 11:40:13] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:13] DEBUG [finrex.request.log_request:59] 请求: GET /api/paper-trading/auto-trade/config
+[2026-11-27 11:40:13] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:15] DEBUG [finrex.request.log_request:59] 请求: GET /api/simulation/history
+[2026-11-27 11:40:17] DEBUG [finrex.request.log_request:59] 请求: GET /api/quant/symbols
+[2026-11-27 11:40:17] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:17] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:22] DEBUG [finrex.request.log_request:59] 请求: OPTIONS /api/quant/backtest/runs
+[2026-11-27 11:40:22] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:40:22] DEBUG [finrex.request.log_request:59] 请求: POST /api/quant/backtest/runs
+[2026-11-27 11:40:22] DEBUG [finrex.request.log_request:61] 请求体: {'symbol': 'BTC-USDT', 'start': '2024-11-27', 'end': '2026-11-27', 'horizon': 5, 'initial_cash': 10000, 'swarm_source_mode': 'auto', 'sentiment_sources': ['fmp'], 'fee_bps': 5, 'exposure': 0.95, 'allow_short': True, 'signal_threshold': 0, 'train_days': 480, 'test_days': 120, 'step_days': 30, 'model_family': 'price_point_calibrated_ml'}
+[2026-11-27 11:40:31] INFO [finrex.backtest.fmp._fetch_window_internal:311] FMP cache hit symbol=BTC-USDT items=2000
+[2026-11-27 11:40:40] DEBUG [finrex.request.log_response:66] 响应: 201
+[2026-11-27 11:41:38] DEBUG [finrex.request.log_request:59] 请求: OPTIONS /api/quant/backtest/runs
+[2026-11-27 11:41:38] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:41:38] DEBUG [finrex.request.log_request:59] 请求: POST /api/quant/backtest/runs
+[2026-11-27 11:41:38] DEBUG [finrex.request.log_request:61] 请求体: {'symbol': 'BTC-USDT', 'start': '2024-11-27', 'end': '2026-11-27', 'horizon': 10, 'initial_cash': 10000, 'swarm_source_mode': 'auto', 'sentiment_sources': ['fmp'], 'fee_bps': 5, 'exposure': 0.95, 'allow_short': True, 'signal_threshold': 0, 'train_days': 480, 'test_days': 120, 'step_days': 30, 'model_family': 'price_point_calibrated_ml'}
+[2026-11-27 11:41:39] INFO [finrex.backtest.fmp._fetch_window_internal:311] FMP cache hit symbol=BTC-USDT items=2000
+[2026-11-27 11:41:45] DEBUG [finrex.request.log_response:66] 响应: 201
+[2026-11-27 11:42:09] DEBUG [finrex.request.log_request:59] 请求: OPTIONS /api/quant/backtest/runs
+[2026-11-27 11:42:09] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:42:09] DEBUG [finrex.request.log_request:59] 请求: POST /api/quant/backtest/runs
+[2026-11-27 11:42:09] DEBUG [finrex.request.log_request:61] 请求体: {'symbol': 'BTC-USDT', 'start': '2024-11-27', 'end': '2026-10-31', 'horizon': 10, 'initial_cash': 10000, 'swarm_source_mode': 'auto', 'sentiment_sources': ['fmp'], 'fee_bps': 5, 'exposure': 0.95, 'allow_short': True, 'signal_threshold': 0, 'train_days': 480, 'test_days': 120, 'step_days': 30, 'model_family': 'price_point_calibrated_ml'}
+[2026-11-27 11:42:10] INFO [finrex.backtest.fmp._fetch_window_internal:311] FMP cache hit symbol=BTC-USDT items=2000
+[2026-11-27 11:42:15] DEBUG [finrex.request.log_response:66] 响应: 201
+[2026-11-27 11:43:27] DEBUG [finrex.request.log_request:59] 请求: OPTIONS /api/quant/backtest/runs
+[2026-11-27 11:43:27] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:43:27] DEBUG [finrex.request.log_request:59] 请求: POST /api/quant/backtest/runs
+[2026-11-27 11:43:27] DEBUG [finrex.request.log_request:61] 请求体: {'symbol': 'BTC-USDT', 'start': '2024-11-27', 'end': '2026-08-31', 'horizon': 10, 'initial_cash': 10000, 'swarm_source_mode': 'auto', 'sentiment_sources': ['fmp'], 'fee_bps': 5, 'exposure': 0.95, 'allow_short': True, 'signal_threshold': 0, 'train_days': 480, 'test_days': 120, 'step_days': 30, 'model_family': 'price_point_calibrated_ml'}
+[2026-11-27 11:43:27] INFO [finrex.backtest.fmp._fetch_window_internal:311] FMP cache hit symbol=BTC-USDT items=2000
+[2026-11-27 11:43:33] DEBUG [finrex.request.log_response:66] 响应: 201
+[2026-11-27 11:43:43] DEBUG [finrex.request.log_request:59] 请求: OPTIONS /api/quant/backtest/runs
+[2026-11-27 11:43:43] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:43:43] DEBUG [finrex.request.log_request:59] 请求: POST /api/quant/backtest/runs
+[2026-11-27 11:43:43] DEBUG [finrex.request.log_request:61] 请求体: {'symbol': 'BTC-USDT', 'start': '2024-11-27', 'end': '2026-08-31', 'horizon': 5, 'initial_cash': 10000, 'swarm_source_mode': 'auto', 'sentiment_sources': ['fmp'], 'fee_bps': 5, 'exposure': 0.95, 'allow_short': True, 'signal_threshold': 0, 'train_days': 480, 'test_days': 120, 'step_days': 30, 'model_family': 'price_point_calibrated_ml'}
+[2026-11-27 11:43:43] INFO [finrex.backtest.fmp._fetch_window_internal:311] FMP cache hit symbol=BTC-USDT items=2000
+[2026-11-27 11:43:49] DEBUG [finrex.request.log_response:66] 响应: 201
+[2026-11-27 11:43:59] DEBUG [finrex.request.log_request:59] 请求: OPTIONS /api/quant/backtest/runs
+[2026-11-27 11:43:59] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:43:59] DEBUG [finrex.request.log_request:59] 请求: POST /api/quant/backtest/runs
+[2026-11-27 11:43:59] DEBUG [finrex.request.log_request:61] 请求体: {'symbol': 'BTC-USDT', 'start': '2024-11-27', 'end': '2026-08-31', 'horizon': 10, 'initial_cash': 10000, 'swarm_source_mode': 'auto', 'sentiment_sources': ['fmp'], 'fee_bps': 5, 'exposure': 0.95, 'allow_short': True, 'signal_threshold': 0, 'train_days': 480, 'test_days': 120, 'step_days': 30, 'model_family': 'price_point_calibrated_ml'}
+[2026-11-27 11:44:00] INFO [finrex.backtest.fmp._fetch_window_internal:311] FMP cache hit symbol=BTC-USDT items=2000
+[2026-11-27 11:44:06] DEBUG [finrex.request.log_response:66] 响应: 201
+[2026-11-27 11:44:45] DEBUG [finrex.request.log_request:59] 请求: OPTIONS /api/quant/backtest/runs
+[2026-11-27 11:44:45] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:44:45] DEBUG [finrex.request.log_request:59] 请求: POST /api/quant/backtest/runs
+[2026-11-27 11:44:45] DEBUG [finrex.request.log_request:61] 请求体: {'symbol': 'BTC-USDT', 'start': '2024-11-27', 'end': '2026-08-31', 'horizon': 10, 'initial_cash': 10000, 'swarm_source_mode': 'auto', 'sentiment_sources': ['fmp'], 'fee_bps': 5, 'exposure': 0.95, 'allow_short': True, 'signal_threshold': '', 'train_days': 480, 'test_days': 120, 'step_days': 30, 'model_family': 'price_point_calibrated_ml'}
+[2026-11-27 11:44:46] DEBUG [finrex.request.log_request:59] 请求: POST /api/quant/backtest/runs
+[2026-11-27 11:44:46] DEBUG [finrex.request.log_request:61] 请求体: {'symbol': 'BTC-USDT', 'start': '2024-11-27', 'end': '2026-08-31', 'horizon': 10, 'initial_cash': 10000, 'swarm_source_mode': 'auto', 'sentiment_sources': ['fmp'], 'fee_bps': 5, 'exposure': 0.95, 'allow_short': True, 'signal_threshold': '', 'train_days': 480, 'test_days': 120, 'step_days': 30, 'model_family': 'price_point_calibrated_ml'}
+[2026-11-27 11:44:47] DEBUG [finrex.request.log_request:59] 请求: POST /api/quant/backtest/runs
+[2026-11-27 11:44:47] DEBUG [finrex.request.log_request:61] 请求体: {'symbol': 'BTC-USDT', 'start': '2024-11-27', 'end': '2026-08-31', 'horizon': 10, 'initial_cash': 10000, 'swarm_source_mode': 'auto', 'sentiment_sources': ['fmp'], 'fee_bps': 5, 'exposure': 0.95, 'allow_short': True, 'signal_threshold': '', 'train_days': 480, 'test_days': 120, 'step_days': 30, 'model_family': 'price_point_calibrated_ml'}
+[2026-11-27 11:44:49] DEBUG [finrex.request.log_request:59] 请求: GET /api/quant/symbols
+[2026-11-27 11:44:49] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:45:00] DEBUG [finrex.request.log_request:59] 请求: OPTIONS /api/quant/backtest/runs
+[2026-11-27 11:45:00] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:45:00] DEBUG [finrex.request.log_request:59] 请求: POST /api/quant/backtest/runs
+[2026-11-27 11:45:00] DEBUG [finrex.request.log_request:61] 请求体: {'symbol': 'BTC-USDT', 'start': '2024-11-27', 'end': '2026-08-31', 'horizon': 5, 'initial_cash': 10000, 'swarm_source_mode': 'auto', 'sentiment_sources': ['fmp'], 'fee_bps': 5, 'exposure': 0.95, 'allow_short': True, 'signal_threshold': 0, 'train_days': 480, 'test_days': 120, 'step_days': 30, 'model_family': 'price_point_calibrated_ml'}
+[2026-11-27 11:45:01] INFO [finrex.backtest.fmp._fetch_window_internal:311] FMP cache hit symbol=BTC-USDT items=2000
+[2026-11-27 11:45:07] DEBUG [finrex.request.log_response:66] 响应: 201
+[2026-11-27 11:45:13] DEBUG [finrex.request.log_request:59] 请求: OPTIONS /api/quant/backtest/runs
+[2026-11-27 11:45:13] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 11:45:13] DEBUG [finrex.request.log_request:59] 请求: POST /api/quant/backtest/runs
+[2026-11-27 11:45:13] DEBUG [finrex.request.log_request:61] 请求体: {'symbol': 'BTC-USDT', 'start': '2024-11-27', 'end': '2026-08-31', 'horizon': 10, 'initial_cash': 10000, 'swarm_source_mode': 'auto', 'sentiment_sources': ['fmp'], 'fee_bps': 5, 'exposure': 0.95, 'allow_short': True, 'signal_threshold': 0, 'train_days': 480, 'test_days': 120, 'step_days': 30, 'model_family': 'price_point_calibrated_ml'}
+[2026-11-27 11:45:13] INFO [finrex.backtest.fmp._fetch_window_internal:311] FMP cache hit symbol=BTC-USDT items=2000
+[2026-11-27 11:45:19] DEBUG [finrex.request.log_response:66] 响应: 201
+[2026-11-27 14:12:15] DEBUG [finrex.request.log_request:59] 请求: GET /api/quant/symbols
+[2026-11-27 14:12:15] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 14:40:28] DEBUG [finrex.request.log_request:59] 请求: GET /api/quant/symbols
+[2026-11-27 14:40:28] DEBUG [finrex.request.log_response:66] 响应: 200
+[2026-11-27 14:57:23] DEBUG [finrex.request.log_request:59] 请求: GET /api/quant/symbols
+[2026-11-27 14:57:23] DEBUG [finrex.request.log_response:66] 响应: 200
