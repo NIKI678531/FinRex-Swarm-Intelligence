@@ -1,0 +1,77 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Local agent/tooling state
+.codex/
+.playwright-cli/
+.cursor/
+.claude/
+
+# IDE/editor state
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+backend/.venv/
+venv/
+ENV/
+.mypy_cache/
+.ruff_cache/
+.eggs/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node.js
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Frontend build output
+frontend/dist/
+frontend/.vite/
+
+# Runtime data and logs
+backend/logs/
+backend/uploads/
+*.log
+
+# Generated reports, pitch decks, and one-off export artifacts
+outputs/
+pitch-assets/
+*.pptx
+pitch.html
+pitch_script_zh.md
+finrex_project_report.html
+finrex_workflow_oasis_backtest_validation.md
+intern_conversion_ppt_outline_finrex.md
+plan-oasisPersonaGraph.md
+
+# Local experiments
+mydoc/
+mytest/
+
+# Docker data
+data/

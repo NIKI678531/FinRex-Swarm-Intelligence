@@ -1,0 +1,7 @@
+export { default as UiCard }      from './UiCard.vue'
+export { default as UiKpi }       from './UiKpi.vue'
+export { default as UiChip }      from './UiChip.vue'
+export { default as UiButton }    from './UiButton.vue'
+export { default as UiSegmented } from './UiSegmented.vue'
+export { default as UiBadge }     from './UiBadge.vue'
+export { default as UiAvatar }    from './UiAvatar.vue'

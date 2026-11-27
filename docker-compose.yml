@@ -1,0 +1,32 @@
+services:
+  finrex:
+    image: ghcr.io/csop-ai/finrex:latest
+    # 加速镜像（如拉取缓慢可替换上方地址）
+    # image: ghcr.io/csop-ai/finrex:latest
+    container_name: finrex
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
+      - "5001:5001"
+    restart: unless-stopped
+    volumes:
+      - ./backend/uploads:/app/backend/uploads
+    depends_on:
+      - falkordb
+
+  # FalkorDB: 用户画像图谱后端（Graphiti 用）
+  # - 6379: Redis/RESP 协议端口（Graphiti 客户端连接用）
+  # - 3000: 浏览器内置仪表板（finrex 主服务也占用 3000，所以这里映射 3001）
+  falkordb:
+    image: falkordb/falkordb:latest
+    container_name: finrex-falkordb
+    ports:
+      - "6379:6379"
+      - "3001:3000"
+    volumes:
+      - falkordb-data:/data
+    restart: unless-stopped
+
+volumes:
+  falkordb-data:

@@ -1,0 +1,65 @@
+import service, { requestWithRetry } from './index'
+
+export const createSimulation = (data) => {
+  return requestWithRetry(() => service.post('/api/simulation/create', data), 3, 1000)
+}
+
+export const prepareSimulation = (data) => {
+  return requestWithRetry(() => service.post('/api/simulation/prepare', data), 3, 1000)
+}
+
+export const getPrepareStatus = (data) => {
+  return service.post('/api/simulation/prepare/status', data)
+}
+
+export const getSimulation = (simulationId) => {
+  return service.get(`/api/simulation/${simulationId}`)
+}
+
+export const getSimulationProfilesRealtime = (simulationId, platform = 'reddit') => {
+  return service.get(`/api/simulation/${simulationId}/profiles/realtime`, { params: { platform } })
+}
+
+export const getSimulationConfig = (simulationId) => {
+  return service.get(`/api/simulation/${simulationId}/config`)
+}
+
+export const getSimulationConfigRealtime = (simulationId) => {
+  return service.get(`/api/simulation/${simulationId}/config/realtime`)
+}
+
+export const startSimulation = (data) => {
+  return requestWithRetry(() => service.post('/api/simulation/start', data), 3, 1000)
+}
+
+export const stopSimulation = (data) => {
+  return service.post('/api/simulation/stop', data)
+}
+
+export const getRunStatus = (simulationId) => {
+  return service.get(`/api/simulation/${simulationId}/run-status`)
+}
+
+export const getRunStatusDetail = (simulationId) => {
+  return service.get(`/api/simulation/${simulationId}/run-status/detail`)
+}
+
+export const closeSimulationEnv = (data) => {
+  return service.post('/api/simulation/close-env', data)
+}
+
+export const getEnvStatus = (data) => {
+  return service.post('/api/simulation/env-status', data)
+}
+
+export const interviewAgents = (data) => {
+  return requestWithRetry(() => service.post('/api/simulation/interview/batch', data), 3, 1000)
+}
+
+export const getSimulationHistory = (limit = 20) => {
+  return service.get('/api/simulation/history', { params: { limit } })
+}
+
+export const deleteSimulation = (simulationId) => {
+  return service.delete(`/api/simulation/${simulationId}`)
+}

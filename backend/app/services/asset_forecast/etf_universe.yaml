@@ -1,0 +1,298 @@
+# CSOP (南方东英) ETF Universe
+# ---------------------------------------------------------------------------
+# Master data extracted from CSOP product catalogue (2026-02 snapshot).
+# Each entry maps a tradable listing to:
+#   - yahoo:        symbol used by yfinance (.HK / .SI suffix; US tickers bare)
+#   - market:       HK | SG | US
+#   - currency:     trading currency
+#   - asset_class:  equity | fixed_income | money_market | crypto | reit | commodity
+#   - theme_tags:   join keys against report_strategy.THEME_RULES
+#   - risk_tier:    low | mid | high | very_high  (used for allocation caps)
+#   - tradable:     false for products without active prediction value
+#                   (money market funds, primary-market only, etc.)
+# ---------------------------------------------------------------------------
+
+products:
+  # ===== 加密货币 (crypto) =====
+  - code: "3066.HK"
+    yahoo: "3066.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英比特币期货 ETF"
+    name_en: "CSOP Bitcoin Futures ETF"
+    asset_class: crypto
+    theme_tags: [crypto]
+    risk_tier: very_high
+    tradable: true
+
+  - code: "3068.HK"
+    yahoo: "3068.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英以太币期货 ETF"
+    name_en: "CSOP Ether Futures ETF"
+    asset_class: crypto
+    theme_tags: [crypto]
+    risk_tier: very_high
+    tradable: true
+
+  # ===== 美股科技 (us_tech / tech_growth) =====
+  - code: "3034.HK"
+    yahoo: "3034.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英纳斯达克100 ETF"
+    name_en: "CSOP NASDAQ 100 ETF"
+    asset_class: equity
+    theme_tags: [us_tech, tech_growth]
+    risk_tier: high
+    tradable: true
+
+  - code: "3454.HK"
+    yahoo: "3454.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英美国七雄 ETF"
+    name_en: "CSOP MAG Seven ETF"
+    asset_class: equity
+    theme_tags: [us_tech, tech_growth]
+    risk_tier: high
+    tradable: true
+
+  # ===== 中国/港股 (china_policy / tech_growth) =====
+  - code: "3033.HK"
+    yahoo: "3033.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英恒生科技指数 ETF"
+    name_en: "CSOP Hang Seng TECH Index ETF"
+    asset_class: equity
+    theme_tags: [china_policy, tech_growth]
+    risk_tier: high
+    tradable: true
+
+  - code: "2822.HK"
+    yahoo: "2822.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英富时中国A50 ETF"
+    name_en: "CSOP FTSE China A50 ETF"
+    asset_class: equity
+    theme_tags: [china_policy]
+    risk_tier: mid
+    tradable: true
+
+  - code: "3037.HK"
+    yahoo: "3037.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英恒生指数 ETF"
+    name_en: "CSOP Hang Seng Index ETF"
+    asset_class: equity
+    theme_tags: [china_policy]
+    risk_tier: mid
+    tradable: true
+
+  - code: "3109.HK"
+    yahoo: "3109.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英科创板50指数 ETF"
+    name_en: "CSOP STAR 50 Index ETF"
+    asset_class: equity
+    theme_tags: [tech_growth, china_policy]
+    risk_tier: high
+    tradable: true
+
+  - code: "3133.HK"
+    yahoo: "3133.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英华泰柏瑞沪深300 ETF"
+    name_en: "CSOP Huatai-PineBridge CSI 300 ETF"
+    asset_class: equity
+    theme_tags: [china_policy]
+    risk_tier: mid
+    tradable: true
+
+  - code: "3101.HK"
+    yahoo: "3101.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英华泰柏瑞中证A500 ETF"
+    name_en: "CSOP Huatai-PineBridge CSI A500 ETF"
+    asset_class: equity
+    theme_tags: [china_policy]
+    risk_tier: mid
+    tradable: true
+
+  - code: "3003.HK"
+    yahoo: "3003.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英MSCI中国A50互联互通 ETF"
+    name_en: "CSOP MSCI China A 50 Connect ETF"
+    asset_class: equity
+    theme_tags: [china_policy]
+    risk_tier: mid
+    tradable: true
+
+  - code: "3174.HK"
+    yahoo: "3174.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英恒生生物科技 ETF"
+    name_en: "CSOP Hang Seng Biotech ETF"
+    asset_class: equity
+    theme_tags: [tech_growth, china_policy]
+    risk_tier: high
+    tradable: true
+
+  - code: "3167.HK"
+    yahoo: "3167.HK"
+    market: HK
+    currency: HKD
+    name_zh: "工银南方东英标普新中华行业 ETF"
+    name_en: "ICBC CSOP S&P NEW CHINA SECTORS ETF"
+    asset_class: equity
+    theme_tags: [china_policy]
+    risk_tier: mid
+    tradable: true
+
+  # ===== 避险/宏观 (safe_haven / macro_risk) =====
+  - code: "3199.HK"
+    yahoo: "3199.HK"
+    market: HK
+    currency: HKD
+    name_zh: "工银南方东英富时中国国债+政策性金融债 ETF"
+    name_en: "ICBC CSOP FTSE Chinese Government & Policy Bank Bond Index ETF"
+    asset_class: fixed_income
+    theme_tags: [macro_risk, safe_haven]
+    risk_tier: low
+    tradable: true
+
+  - code: "3433.HK"
+    yahoo: "3433.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英富时美国国债20年+ ETF"
+    name_en: "CSOP FTSE US Treasury 20+ Years Index ETF"
+    asset_class: fixed_income
+    theme_tags: [macro_risk, safe_haven]
+    risk_tier: mid
+    tradable: true
+
+  - code: "3469.HK"
+    yahoo: "3469.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英港股通高股息 ETF"
+    name_en: "CSOP Hang Seng Stock Connect High Dividend ETF"
+    asset_class: equity
+    theme_tags: [safe_haven]
+    risk_tier: mid
+    tradable: true
+
+  - code: "2802.HK"
+    yahoo: "2802.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英国企指数备兑认购主动型 ETF"
+    name_en: "CSOP HSCEI Covered Call Active ETF"
+    asset_class: equity
+    theme_tags: [safe_haven, china_policy]
+    risk_tier: mid
+    tradable: true
+
+  # ===== 区域 (regional) =====
+  - code: "2830.HK"
+    yahoo: "2830.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英沙特阿拉伯 ETF"
+    name_en: "CSOP Saudi Arabia ETF"
+    asset_class: equity
+    theme_tags: [macro_risk]
+    risk_tier: high
+    tradable: true
+
+  - code: "3004.HK"
+    yahoo: "3004.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英富时越南30 ETF"
+    name_en: "CSOP FTSE Vietnam 30 ETF"
+    asset_class: equity
+    theme_tags: [macro_risk]
+    risk_tier: high
+    tradable: true
+
+  - code: "3153.HK"
+    yahoo: "3153.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英日经225指数 ETF"
+    name_en: "CSOP Nikkei 225 Index ETF"
+    asset_class: equity
+    theme_tags: [us_tech, macro_risk]
+    risk_tier: mid
+    tradable: true
+
+  # ===== REITs / 行业 =====
+  - code: "3447.HK"
+    yahoo: "3447.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英富时亚太精选REITs ETF"
+    name_en: "CSOP FTSE Asia Pacific Select REITs ETF"
+    asset_class: reit
+    theme_tags: [safe_haven]
+    risk_tier: mid
+    tradable: true
+
+  # ===== 货币基金 — 不参与预测 (not tradable for forecast) =====
+  - code: "3053.HK"
+    yahoo: "3053.HK"
+    market: HK
+    currency: HKD
+    name_zh: "南方东英港元货币市场 ETF"
+    name_en: "CSOP Hong Kong Dollar Money Market ETF"
+    asset_class: money_market
+    theme_tags: [safe_haven]
+    risk_tier: low
+    tradable: false
+
+  - code: "9096.HK"
+    yahoo: "9096.HK"
+    market: HK
+    currency: USD
+    name_zh: "南方东英美元货币市场 ETF"
+    name_en: "CSOP US Dollar Money Market ETF"
+    asset_class: money_market
+    theme_tags: [safe_haven]
+    risk_tier: low
+    tradable: false
+
+  - code: "83122.HK"
+    yahoo: "83122.HK"
+    market: HK
+    currency: CNY
+    name_zh: "南方东英人民币货币市场 ETF"
+    name_en: "CSOP RMB Money Market ETF"
+    asset_class: money_market
+    theme_tags: [safe_haven]
+    risk_tier: low
+    tradable: false
+
+# ---------------------------------------------------------------------------
+# Theme key compatibility map: aligns this universe's theme_tags with
+# report_strategy.THEME_RULES keys so the forecast service can plug
+# directly into the existing strategy signals layer.
+# ---------------------------------------------------------------------------
+theme_aliases:
+  crypto:        [crypto]
+  us_tech:       [us_tech, tech_growth]
+  china_policy:  [china_policy]
+  tech_growth:   [tech_growth, china_policy]
+  macro_risk:    [macro_risk, safe_haven]
+  safe_haven:    [safe_haven, macro_risk]
